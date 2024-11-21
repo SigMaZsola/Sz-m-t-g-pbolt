@@ -6,7 +6,7 @@
 }
 
 body{
-    
+
     box-sizing: border-box;
     background-color: var(--background);
     display: flex;
@@ -21,10 +21,14 @@ body{
     }
 
     .side-bar{
+        position: relative;
         display: flex;
         flex-direction: column;
-        width: 20vw;
+        width: 25%;
         min-width: 160px;
+        max-width: 250px;
+        height: 98%;
+
         .navi{
             height: 6%;
             background-color: var(--primary);
@@ -47,10 +51,15 @@ body{
     }
 
     .main{
+        width: 79%;
         display: flex;
         flex-direction: column;
 
         .search-container{
+            top: 10px;
+            position: sticky;
+
+            padding: 10px;
             height: 6%;
             display: flex;
             flex-direction: row;
@@ -59,7 +68,7 @@ body{
             input[type = "text"]{
                 height: 20px;
                 width: 75%;
-                margin-left: 10px;
+                margin-left: 0px;
             }
 
             input[type = "button"]{
@@ -74,32 +83,34 @@ body{
             }
         }
 
-        .items{
+        #items{
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            flex-direction: row;
 
             .item{
                 padding: 20px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 align-items: center;
+                width: 15%;
 
                 .item-img{
                     background-image: url("images/placeholder.jpg");
                     background-size: cover;
-                    width: 15%;
-                    min-width: 60px;
+                    width: 100%;
                     aspect-ratio: 1;
                     border: solid white 10px;
                 }
                 .item-description{
                     height: 80%;
+                    width: 90%;
                     margin: 15px;
                     background-color: var(--primary);
                     padding: 15px;
                 }
                 .plus{
-                    height: 100%;
+                    height: 10%;
 
                     color: var(--primary);
                     font-size: 60px;
@@ -111,3 +122,12 @@ body{
     }
 }
 
+@media (max-width: 600px) {
+    #items {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .item{
+        flex: 80%;
+    }
+}

@@ -1,0 +1,6 @@
+CPU;gép;alam;i900;800;32;almás;3
+CPU;gép;alam;i900;800;32;almás;3
+CPU;gép;alam;i900;800;32;almás;3
+CPU;gép;alam;i900;800;32;almás;3
+CPU;gép;alam;i900;800;32;almás;3
+CPU;gép;alam;i900;800;32;almás;3
