@@ -1,0 +1,113 @@
+:root{
+    --background: #001D3D;
+    --primary: #FFC300;
+    --secondary: #003566;
+    --contrast: #FFFFFF;
+}
+
+body{
+    
+    box-sizing: border-box;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    .element{
+        background-color: var(--secondary);
+        margin: 10px;
+    }
+
+    .side-bar{
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        min-width: 160px;
+        .navi{
+            height: 6%;
+            background-color: var(--primary);
+            text-align: center;
+            align-content: center;
+            a{
+                color: var(--secondary);
+                text-decoration: none;
+            }
+        }
+
+        .types{
+            height: 30%;
+        }
+
+        .configs{
+            height: 55%;
+        }
+
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+
+        .search-container{
+            height: 6%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            input[type = "text"]{
+                height: 20px;
+                width: 75%;
+                margin-left: 10px;
+            }
+
+            input[type = "button"]{
+                height: 25px;
+                aspect-ratio: 1;
+                margin-left: 5px;
+                border: 0;
+                background-color: var(--primary);
+
+                background-image: url('images/search.svg');
+                background-size: cover;
+            }
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+
+            .item{
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .item-img{
+                    background-image: url("images/placeholder.jpg");
+                    background-size: cover;
+                    width: 15%;
+                    min-width: 60px;
+                    aspect-ratio: 1;
+                    border: solid white 10px;
+                }
+                .item-description{
+                    height: 80%;
+                    margin: 15px;
+                    background-color: var(--primary);
+                    padding: 15px;
+                }
+                .plus{
+                    height: 100%;
+
+                    color: var(--primary);
+                    font-size: 60px;
+                    font-weight: 700;
+                    align-content: center;
+                }
+            }
+        }
+    }
+}
+
