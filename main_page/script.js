@@ -53,18 +53,3 @@ function createItem(line){
     item.appendChild(plus)
 }
 
-// Making the sidebar scroll
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const sidebar = document.querySelector('.side-bar');
-    const initialOffsetTop = sidebar.offsetTop;
-
-    window.addEventListener('scroll', function() {
-        const scrollDistance = window.pageYOffset;
-        const newTop = initialOffsetTop + scrollDistance;
-
-        sidebar.style.top = `${newTop}px`;
-    });
-});
-
