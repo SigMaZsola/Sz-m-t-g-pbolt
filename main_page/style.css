@@ -99,7 +99,7 @@ body{
                 width: 20%;
 
                 .item-img{
-                    background-image: url("images/placeholder.jpg");
+                    background-image: url("images/placeholder.svg");
                     background-size: cover;
                     width: 100%;
                     aspect-ratio: 1;
