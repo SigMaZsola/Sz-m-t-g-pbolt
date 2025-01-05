@@ -1,0 +1,96 @@
+:root{
+    --background: #001D3D;
+    --primary: #FFC300;
+    --secondary: #003566;
+    --contrast: #FFFFFF;
+}
+
+body{
+    background-color: #001D3D;
+}
+
+.container h1{
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.termek{
+    background-color: white;
+    border-radius: 0px 30px 0px 30px;
+    padding: 10px;
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+#card-container{
+    margin-top: 100px;
+}
+
+
+#card-container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC300;
+    color: #001D3D;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 0px solid #FFC300;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-shape-divider-top-1736112800 {
+    fill: #003566;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1736113219 .shape-fill {
+    fill: #003566;
+}
+
+.custom-shape-divider-bottom-1736113292 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1736113292 svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 104px;
+}
+
+.custom-shape-divider-bottom-1736113292 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.amd h3{
+    background-color: #9E1B32;
+    border: 2px solid #9E1B32;
+    color: white;
+}
+
+.intel h3{
+    background-color: #0071C5;
+    border: 2px solid #0071C5;
+    color: white;
+}
+
+.nvidia h3{
+    background-color: #76B900;
+    color: white;
+    border: 2px solid #76B900;
+}
