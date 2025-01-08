@@ -79,18 +79,89 @@ body{
 
 .amd h3{
     background-color: #9E1B32;
-    border: 2px solid #9E1B32;
+    border: 4px solid #9E1B32;
     color: white;
+    border-radius: 10px;
 }
 
 .intel h3{
     background-color: #0071C5;
-    border: 2px solid #0071C5;
+    border: 4px solid #0071C5;
     color: white;
+    border-radius: 10px;
 }
 
 .nvidia h3{
     background-color: #76B900;
     color: white;
-    border: 2px solid #76B900;
+    border: 4px solid #76B900;
+    border-radius: 10px;
 }
+
+.custom-shape-divider-top-1736112800 svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 200px;
+    overflow: visible;
+}
+h1{
+    
+    z-index: 1000 !important;
+}
+
+.custom-shape-divider-top-1736112800 .shape-fill {
+    fill: #003566;
+}
+
+.wave path {
+    animation: waveAnimation 6s ease-in-out infinite alternate;
+    position: absolute;
+    
+}
+
+@keyframes waveAnimation {
+    0% {
+        d: path("M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z");
+    }
+    50% {
+        d: path("M321.39,66.44c68-15.79,124.16-20.13,182-31.86,92.39-20.72,178.19-22.73,260.45-5.39C833.78,45,916.67,92,995.66,122.83c80.05,28.48,156.53,36.09,224.34,13V0H0V27.35A600.21,600.21,0,0,0,321.39,66.44Z");
+    }
+    100% {
+        d: path("M321.39,46.44c48-5.79,104.16-40.13,162-51.86,72.39-26.72,158.19-27.73,240.45-10.39C813.78,21,896.67,42,975.66,72.83c60.05,18.48,136.53,26.09,204.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,46.44Z");
+    }
+}
+
+
+.navs{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: #0071C5;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.nitem{
+    background-color: #FFC300;
+    padding: 3px;
+    border-radius: 10px;
+    border: 5px solid #003566;
+    text-align: center;
+    margin: 5px;
+}
+.nitem:hover{
+    border: 10px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+
+  }
+  
+  .wave {
+    display: block;
+    width: 100%;
+    height: auto;
+  }

@@ -37,14 +37,42 @@ async function loadData() {
         };
         products.push(product);
     });
-    console.log(products)
-    displayData()
+}
+
+function motherBoard(){
+    displayData("alaplap")
+}
+function cpu(){
+    displayData("CPU")
+    alert("CPU")
+}
+
+function memory(){
+    displayData("memoria")
+}
+
+function gpu(){
+    displayData("gpu")
+}
+
+function harddrive(){
+    displayData("hard")
+}
+
+function monitor(){
+    displayData("monitor")
+}
+
+function mouse(){
+    displayData("mouse")
+}
+
+function keyboard(){
+    displayData("bill")
 }
 
 
-
-
-async function displayData(){
+function displayData(faj){
     products.forEach(termek => {
         let card = document.createElement("div");
         card.classList.add("termek");
@@ -64,33 +92,38 @@ async function displayData(){
                 card.classList.add("default");
                 break;
         }
-        card.innerHTML = `
+        if(faj == termek.faj.toLowerCase()){
+            card.innerHTML = `
             <h3>${termek.marka} ${termek.modell}</h3>
             <p>Ár: ${termek.ar} Ft</p>
             <p>Típus: ${termek.type}</p>
-            <p>Specifikációk: ${termek.spec1}, ${termek.spec2}</p>
+            
             <button>Tovább...</button>
             <div class="extra-info" style="display: none;">
-                <p>Részletes információk a termékről: Itt lesz több szöveg a termékről.</p>
+                <p>Specifikációk: ${termek.spec1}, ${termek.spec2}</p>
             </div>
         `;
+        }
+
 
         const button = card.querySelector("button");
+        if (button){
+            button.addEventListener("click", () => {
+                const extraInfo = card.querySelector(".extra-info");
+                extraInfo.style.display = extraInfo.style.display === "none" ? "block" : "none";
+                if (extraInfo.style.display === "none") {
+                    button.innerText = "Tovább...";
+                } else {
+                    button.innerText = "Kevesebb...";
+                }
+            });
+    
+            card.addEventListener("click", () => {
+                compareing.push(card.innerHTML)
+                
+            })
+        }
         
-        button.addEventListener("click", () => {
-            const extraInfo = card.querySelector(".extra-info");
-            extraInfo.style.display = extraInfo.style.display === "none" ? "block" : "none";
-            if (extraInfo.style.display === "none") {
-                button.innerText = "Tovább...";
-            } else {
-                button.innerText = "Kevesebb...";
-            }
-        });
-
-        card.addEventListener("click", () => {
-            compareing.push(card.innerHTML)
-            
-        })
 
         cardContainer.appendChild(card);
     });
