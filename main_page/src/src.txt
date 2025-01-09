@@ -1,47 +1,40 @@
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
-CPU;gép;alam;i900;800;32;almás;3
+1;CPU;Intel;Core i9-12900K;599.99
+2;CPU;AMD;Ryzen 9 5900X;499.99
+3;CPU;Intel;Core i5-12600K;299.99
+4;CPU;AMD;Ryzen 5 5600X;199.99
+5;GPU;NVIDIA;GeForce RTX 3060;329.99
+6;GPU;AMD;Radeon RX 6700 XT;479.99
+7;GPU;NVIDIA;GeForce RTX 4080;1199.99
+8;GPU;AMD;Radeon RX 7900 XTX;999.99
+9;Laptop;Apple;MacBook Air M2;1199.99
+10;Laptop;Dell;XPS 13;999.99
+11;Laptop;HP;Spectre x360;1399.99
+12;Laptop;Lenovo;ThinkPad X1 Carbon;1699.99
+13;Smartphone;Apple;iPhone 14 Pro;999.99
+14;Smartphone;Samsung;Galaxy S23 Ultra;1199.99
+15;Smartphone;Google;Pixel 7 Pro;899.99
+16;Smartphone;Xiaomi;Mi 12 Ultra;799.99
+17;Monitor;LG;Ultragear 27GN950;699.99
+18;Monitor;Dell;Alienware AW3423DW;1299.99
+19;Monitor;Samsung;Odyssey Neo G9;2499.99
+20;Monitor;ASUS;ROG Swift PG32UQX;2999.99
+21;Storage;Samsung;980 PRO SSD;199.99
+22;Storage;Western Digital;Black SN850X;239.99
+23;Storage;Seagate;FireCuda 530;179.99
+24;Storage;Kingston;KC3000;149.99
+25;Headphones;Sony;WH-1000XM5;399.99
+26;Headphones;Bose;QuietComfort 45;329.99
+27;Headphones;Apple;AirPods Max;549.99
+28;Headphones;Sennheiser;Momentum 4;349.99
+29;Keyboard;Logitech;MX Keys;99.99
+30;Keyboard;Razer;BlackWidow V3 Pro;229.99
+31;Keyboard;Corsair;K95 RGB Platinum XT;199.99
+32;Keyboard;Keychron;K8 Wireless;89.99
+33;Mouse;Logitech;MX Master 3S;99.99
+34;Mouse;Razer;DeathAdder V3 Pro;149.99
+35;Mouse;SteelSeries;Aerox 5 Wireless;129.99
+36;Mouse;Corsair;Dark Core RGB Pro SE;99.99
+37;Smartwatch;Apple;Apple Watch Series 8;399.99
+38;Smartwatch;Samsung;Galaxy Watch 5;349.99
+39;Smartwatch;Garmin;Fenix 7;799.99
+40;Smartwatch;Fitbit;Sense 2;299.99

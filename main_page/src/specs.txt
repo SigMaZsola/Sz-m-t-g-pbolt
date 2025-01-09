@@ -1,1 +1,6 @@
-CPU#CLOCK:int;SOCET:string;CORES:int
+CPU#Clock Speed:string;Socket:string;Cores:int
+GPU#Chipset:string;Memory:int GB;Ports:int
+Laptop#Screen Size:float inches;Battery Life:int hours;Weight:float kg
+Smartphone#Camera Resolution:int MP;Battery:int mAh;Display Type:string
+Monitor#Resolution:string;Refresh Rate:int Hz;Panel Type:string
+Storage#Capacity:int GB;Type:string;Write Speed:int MB/s
