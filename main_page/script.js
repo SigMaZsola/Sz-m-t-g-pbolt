@@ -35,6 +35,7 @@ function getCurrencyByCountry(countryCode) {
         AU: "AUD",
         JP: "JPY",
         IN: "INR",
+        HU: "HUF"
         // Add more countries and their currencies as needed
     };
 
@@ -118,12 +119,17 @@ function createItem(line) {
     item_img.classList.add("item-img");
 
     const img = new Image();
-    img.src = "item_images/" + parts["id"] + ".jpg";
+    try{
+        img.src = "item_images/" + parts["id"] + ".jpg";
+        img.onload = function () {
+            item_img.style.backgroundImage =
+                'url("' + "item_images/" + parts["id"] + '.jpg' + '")';
+        };
+    } catch (e){
+        console.log(`image cannot be loaded: ${parts["id"] + '.jpg'}`)
+    }
 
-    img.onload = function () {
-        item_img.style.backgroundImage =
-            'url("' + "item_images/" + parts["id"] + '.jpg' + '")';
-    };
+
 
     item.appendChild(item_img);
 
@@ -131,10 +137,10 @@ function createItem(line) {
     item_description.classList.add("item-description");
 
     let descriptionContent = `
-        Type: ${parts["type"]}
-        Brand: ${parts["brand"]}
-        Model: ${parts["model"]}
-        <span class="price">Price: ${parts["price"].toFixed(2)} USD</span>
+        Type: ${parts["type"]}<br>
+        Brand: ${parts["brand"]}<br>
+        Model: ${parts["model"]}<br>
+        <span class="price">Price: ${parts["price"].toFixed(2)} USD</span>\n
     `;
 
     item_description.innerHTML = descriptionContent;
